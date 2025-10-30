@@ -15,7 +15,7 @@
 ## 💻 Visualização
 
 🔗 **Veja o projeto online:**  
-👉 [Visualize aqui](https://lelolel.github.io/first-portfolio)
+👉 [Visualize aqui](https://lleolel.github.io/first-portfolio)
 
 ---
 
