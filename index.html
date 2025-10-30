@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Portfólio</title>
+</head>
+<body>
+    
+    <div class="main-portfolio">
+        <header class="cabeçalho">
+
+            <a href="/" class="logo">LE<4</a>
+
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu">
+                
+                <a href="/">Início</a>
+                <a href="/">Sobre</a>
+                <a href="/">Serviços</a>
+                <a href="/">Projetos</a>
+                <a class="cntt" href="/">Entre em contato</a>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="literallyme"><img src="images/mizuki.jpg" alt=""></div>
+
+            <div class="content">
+                <h1>Opa, eu sou <span>Le</span>!</h1>
+                <h3 class="typetext">Sou <span></span></h3>
+                <p>Artista de alma e apaixonada por design e tecnologia. Quero mostrar as minhas ideias ao mundo, trazendo não somente beleza, mas sim muita vida e autenticidade em arte! :)</p>
+                
+                <a href="/" class="btn">Entre em contato</a>
+
+                <div class="social-icons">
+                    <a href="/"><i class="fab fa-linkedin"></i></a>
+                    <a href="/"><i class="fab fa-github"></i></a>
+                    <a href="/"><i class="fab fa-discord"></i></a>
+                    <a href="/"><i class="fab fa-instagram"></i></a>
+                    <a href="/"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="bannerzinho">
+                <img src="images/bannerzin.jpg" alt="Bannerzinho fofo">
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+        </script>
+
+    <!-- by le koga <4 -->
+</body>
+</html>

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.cabeçalho{
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 10%;
+    background-color: #b83dff;
+    filter: drop-shadow(10px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.main-portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+
+}
+
+.logo:hover{
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  text-shadow: 0 0 35px #d88dff;
+}
+
+.menu a{
+    font-size: 20px;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 500;
+    transform: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover, menu a:active{
+    color: white;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    text-shadow:
+    0 0 5px #e6bcff;
+}
+
+.menu .cntt{
+    background-color:  black;
+    color: white;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    padding: 10px 18px;
+    border: 2px solid black;
+    border-radius: 140px;
+
+}
+
+.menu .cntt:hover{
+    transform: scale3d(1.03);
+    background-color: white;
+    color: #b83dff;
+    border: 2px solid white;
+    box-shadow: 0 0 25px #f8ecff;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 4rem 9% 2rem;;
+}
+
+.home .content h1{
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+span{
+    color: #b83dff;
+}
+
+.home .content h3{
+    font-size: 38px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home .literallyme img {
+  width: 64vh;
+  border-radius: 100%;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px #b83dff80;
+}
+
+.home .literallyme img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #d88dff;
+  filter: brightness(1.2);
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    font-size: 2rem;
+    border-radius: 100%;
+    margin: 10px ;
+    transition: 0.3s ease;
+    color: #b83dff;
+    border: 2px solid;
+
+}
+
+.social-icons i{
+    font-size: 18px;
+}
+
+.social-icons a:hover{
+    color: white;
+    background-color: #b83dff;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 18px 20px;
+    margin: 34px 0 24px;
+    background-color: black;
+    color: white;
+    border: 4px solid black;
+    border-radius: 4rem;
+    font-size: 24px;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #c560ff;
+    border: 4px solid #c560ff;
+    color: white;
+    box-shadow: 0 8px 20px #c560ff7e;
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.typetext{
+    font-size: 30px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typetext span{
+    position: relative;
+}
+
+.typetext span:before{
+    content: "Ilustrador";
+    color: #b83dff;
+    animation: words 8s infinite;
+}
+
+.typetext span:after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    border-left: 3px solid transparent;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+.bannerzinho{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 400px;
+}
+
+.bannerzinho img{
+  width: 100%;
+  height: auto;
+}
+
+.bannerzinho img:hover{
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b83dff;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Web designer";
+    }
+    21%, 40%{
+        content: "Estudante Front-End";
+    }
+    41%, 60%{
+        content: "Artista";
+    }
+
+    61%, 80%{
+        content: "Gênero fluído";
+    }
+}
+
+@media (max-width: 1115px){
+    footer .bannerzinho {
+        position: static;
+        width: 400px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 985px){
+
+    .home {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    .home .literallyme img {
+        width: 40%;
+    }
+
+    .home .content{
+        padding: 0 100px;
+    }
+
+    .home .content h1 {
+        font-size: 64px;
+    }
+
+    .home .content h3 {
+        font-size: 34px;
+    }
+
+    .bannerzinho {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 14px;
+        padding: 0;
+    }
+
+    .bannerzinho img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .menu-toggle.active i::before {
+        content: "\f00d";
+    }
+
+    .menu .cntt {
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 150px;
+        height: 100vh;
+        background-color: black;
+        border-left: 3px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        transition: right 0.4s ease;
+        padding-left: 2rem;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu a {
+        display: block;
+        font-size: 1.4rem;
+        margin: 1.2rem 0;
+        color: #fff;
+    }
+
+    .menu .cntt {
+       align-self: center;
+        margin-top: 1rem;
+    }
+
+    .cabeçalho {
+        padding: 14px 8%;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 430px){
+
+    .cabeçalho{
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 28px;
+    }
+
+    .menu-toggle{
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    .menu{
+        width: 100%;
+        right: -100%;
+        background-color: #000;
+        border-left: none;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    .menu a{
+        font-size: 1.2rem;
+    }
+
+    .home{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .home .content h1{
+        font-size: 34px;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
+    .home .content h3{
+        font-size: 20px;
+    }
+
+    .home .content p{
+        font-size:12px;
+        line-height: 1.5;
+        margin: 38px 0 0;
+    }
+
+    .btn{
+        padding: 12px 18px;
+        font-size: 14px;
+        margin: 40px 0 30px;
+    }
+
+    .home .literallyme img{
+        width: 60%;
+        margin-top: 34px;
+    }
+
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+        margin: 0 8px;
+    }
+
+    .bannerzinho{
+        width: 90%;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bannerzinho img{
+        width: 100%;
+        max-width: 390px;
+    }
+
+      html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+}
