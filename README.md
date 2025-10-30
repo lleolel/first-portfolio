@@ -28,6 +28,12 @@ Esse portfólio foi criado com o intuito de explorar:
 
 O resultado é um site que mistura tecnologia e arte — uma vitrine das minhas paixões e aprendizados.
 
+## 🌙 Status do projeto
+
+![Status](https://img.shields.io/badge/Status-Em%20Andamento-8A2BE2?style=for-the-badge&logoColor=white)
+![Versão](https://img.shields.io/badge/Versão-1.0-blueviolet?style=for-the-badge)
+
+
 ---
 
 ## 💕 Tecnologias usadas
